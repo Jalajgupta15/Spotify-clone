@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spotify</title>
+        <link rel="icon" type="image/x-icon" href="./logo.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>   
+    </head>
+    <body>
+
+        <!-- Navbar Large Screen -->
+        <div class="header-nav header-sticky fixed-top d-lg-flex align-items-center justify-content-center">
+            <div class="container">
+                <nav class="row">
+                    <ul class="d-flex align-items-center justify-content-center m-2 ">
+                        <li class="px-3 brand spotifylogotext"><img src="./logo.png" alt="Spotify Logo" height="50px"><b>  Spotify</b></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Large Screen -->
+        
+        <!-- Main Content Large Screen -->
+        <div class="mainContent col-lg-8 d-lg-block d-none container mt-5">
+            <table class="table table-hover table-dark table-borderless">
+                <thead class="border-bottom">
+                    <tr>
+                        <th class="songListHead">#</th>
+                        <th class="songListHead">Title</th>
+                        <th class="songListHead">Album</th>
+                        <th></th><!-- Like Unlike -->
+                        <th class="songListHead"><i class="fa-regular fa-clock"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="songListHead">1</td>
+                        <td id="0" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/All-too-well.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="1">All too well (Taylor's Version)</p>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Red (Taylor's Version)</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">10:13</td>
+                    </tr>
+                    <tr >
+                        <td class="songListHead">2</td>
+                        <td id="1" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/bye.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="2">Bye</p>
+                                    <p>Aditya Bhardwaj</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Bye</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:54</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">3</td>
+                        <td id="2" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/dooriyan-Zaeden-500-500.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="3">Dooriyan</p>
+                                    <p>Zaeden</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Genesis 1:1</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:42</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">4</td>
+                        <td id="3" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/Have-we-met-before.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="4">Have We Met Before</p>
+                                    <p>Sarah Barrios, Eric Nam</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Have We Met Before</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:38</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">5</td>
+                        <td id="4" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/double-take.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="5">Double Take</p>
+                                    <p>dhruv</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">rapunzel</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:52</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">6</td>
+                        <td id="5" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/Love-Song.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="6">Love Song</p>
+                                    <p>Why Don't We</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">The Good Times and the Bad Ones</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:31</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">7</td>
+                        <td id="6" class="songListHead songItemPlay d-flex align-items-top">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/socha-na-tha.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="7">socha na tha</p>
+                                    <p>Zaeden</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Genesis 1:1</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">2:24</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">8</td>
+                        <td class="songListHead">
+                            <div class="d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/dil-dhadakne-do.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="8">Dil Dhadakne Do</p>
+                                    <p>Priyanka Chopra, Farhan Akhtar</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Dil Dhadakne Do</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">3:48</td>
+                    </tr>
+                    <tr>
+                        <td class="songListHead">9</td>
+                        <td  class="songListHead">
+                            <div class=" d-flex justify-content-start align-items-top">
+                                <div class="box" style="background-image: url(./Covers/Senorita.jpg);"></div>
+                                <div class="playlistText">
+                                    <p class="m-0 songItemPlay" id="9">Senorita</p>
+                                    <p>Farhan Akhtar, Hrithik Roshan</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="songListHead">Zindagi Na Milegi Dobara</td>
+                        <td><img src="./HeartGrey.png" class="love me-5" alt="Like or Unlike Songs"></td>
+                        <td class="songListHead">3:49</td>
+                    </tr>
+                </tbody>
+                </tbody>
+
+            </table>
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Navbar/Sidepanel Small Screen -->
+        <div class="header-mobile d-flex justify-content-evenly align-items-center header-sticky fixed-top d-lg-none">
+            <div class="container header-mobile-top">
+                <nav class="d-flex align-items-center">
+
+                    <!-- Sidepanel -->
+                    <div class="col-2">
+                        <div class="header-toggle">
+                            <div id="mySidepanel" class="sidepanel shadow">
+                                
+                                <!-- Sidepanel Top -->
+                                <div class="container sidepanel-menu-top">
+                                    
+                                    <!-- Sidepanel List -->
+                                    <div class="sidepanel-menu-list flex-column">
+                                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                                            <a href="#" class="ms-4 home sidepanel-menu-nav d-flex align-items-center">
+                                                <i class="icons fa-solid fa-house"></i>
+                                                <p class="sidebartext ms-5">Home</p>
+                                            </a>
+                                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                                <div class=" sidepanel-menu-caret d-flex justify-content-end align-items-center">
+                                                    <i class="fa-solid fa-circle-xmark"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                        <a href="#" class="mx-4 my-2 search sidepanel-menu-nav d-flex align-items-center">
+                                            <i class="icons fa-solid fa-magnifying-glass"></i>
+                                            <p class="sidebartext ms-5">Search</p>
+                                        </a>
+                                        <a href="#" class="mx-4 mb-2 library sidepanel-menu-nav d-flex align-items-center">
+                                            <i class="icons fa-solid fa-headphones"></i>
+                                            <p class="sidebartext ms-5">Library</p>
+                                        </a>
+                                    </div>
+                                    <!-- End Sidepanel List-->
+                                </div>
+                                <!-- End Sidepanel Top -->
+                                
+                                <div class="sidebarDivider"></div>
+
+                                <!--Sidebar Bottom-->
+                                <div class="container mb-4 sidebarbottom">
+                                    <table class="ms-4">
+
+                                        <!-- Liked Songs -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/LikedSongs.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Liked Songs</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Liked Songs -->
+
+                                        <!-- Classic Pop Picks -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/ClassicPopPicks.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Classic Pop Picks</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Classic Pop Picks -->
+
+                                        <!-- Soft Lofi -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/SoftLofi.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Soft Lofi</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Soft Lofi -->
+
+                                        <!-- Girl Power Anthem -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/GirlPowerAnthems.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Girl Power Anthem</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Girl Power Anthem -->
+
+                                        <!-- Work Music -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/WorkMusic.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Work Music</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Work Music -->
+
+                                        <!-- Chill Pop -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/purple.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Chill Pop</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Chill Pop -->
+
+                                        <!-- Chart Hits -->
+                                        <div class="playlist my-3 d-flex align-items-center">
+                                            <div class="box" style="background-image: url(./PlaylistCovers/ChartHits.jpeg);"></div>
+                                            <div>
+                                                <p class="ms-4 sideTextsm">Chart Hits</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Chart Hits -->
+                                    </table>
+                                </div>
+                                <!-- End Sidebar Bottom -->
+
+                                <div class="sidebarDivider2"></div>
+                            </div>
+                              
+                            <div id="main">
+                                <button class="openbtn sidepanel-menu-button" onclick="openNav()">&#9776;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Sidepanel-->
+
+                    
+                    <!-- Logo Spotify -->
+                    <ul class="m-0 col-8">
+                        <li class="brand spotifylogotext d-flex align-items-center justify-content-center"><img src="./logo.png" alt="Spotify Logo" height="50px"><b>  Spotify</b></li>
+                    </ul>
+                    <!-- Logo Spotify -->
+                    <div class="col-2"></div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Large Screen -->
+
+        <!-- Main Content Small Screen -->
+        <table class="d-lg-none mainContent table table-hover table-dark table-borderless">
+            
+            <tbody>
+                <tr>
+                    <td id="0" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/All-too-well.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="1">All too well (Taylor's Version)</p>
+                            <p>Taylor Swift</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr >
+                    <td id="1" class="songListHead songItemPlay">
+                        <div class="box ms-4 " style="background-image: url(./Covers/bye.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="2">Bye</p>
+                            <p>Aditya Bhardwaj</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td id="2" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/dooriyan-Zaeden-500-500.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="3">Dooriyan</p>
+                            <p>Zaeden</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td id="3" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/Have-we-met-before.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="4">Have We Met Before</p>
+                            <p>Sara Barrios, Eric Nam</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td id="4" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/double-take.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="5">Double Take</p>
+                            <p>Zaeden</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td id="5" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/Love-Song.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="6">Love Song</p>
+                            <p>Why Don't Why</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td id="6" class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/socha-na-tha.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="7">socha na tha</p>
+                            <p>Zaeden</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+
+                <tr>
+                    <td class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/dil-dhadakne-do.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="8">Dil Dhadakne Do</p>
+                            <p>Priyanka Chopra, Farhan Akhtar</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+                <tr>
+                    <td  class="songListHead songItemPlay">
+                        <div class="box ms-4" style="background-image: url(./Covers/Senorita.jpg);"></div>
+                    </td>
+                    <td>
+                        <div class="playlistText">
+                            <p class="m-0 songItemPlay" id="9">Senorita</p>
+                            <p>Farhan Akhtar, Hrithik Roshan</p>
+                        </div>
+                    </td>
+                    <td><img src="./HeartGrey.png" class="love me-4" alt="Like or Unlike Songs"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-lg-none extraMainContent"></div>
+        <!-- End Main Content Small Screen -->
+
+        <!-- Sidebar Large Screen -->
+        <div class="mt-5 sidebar col-lg-4 d-lg-block d-none">
+
+            <div class="sidebarDivider1 "></div>
+
+            <!-- Sidebar Top-->
+            <div class="container">
+                <div class="row mx-3">
+                    <a href="#" class="home d-flex align-items-center">
+                        <i class="icons fa-solid fa-house"></i>
+                        <p class="sidebartext mx-4 mt-4">Home</p>
+                    </a>
+                    <a href="#" class="search d-flex align-items-center">
+                        <i class="icons fa-solid fa-magnifying-glass"></i>
+                        <p class="sidebartext mx-4 mt-4">Search</p>
+                    </a>
+                    <a href="#" class="library d-flex align-items-center">
+                        <i class="icons fa-solid fa-headphones"></i>
+                        <p class="sidebartext mx-4 mt-4">Library</p>
+                    </a>
+
+                </div>
+            </div>
+            <!-- End Sidebar Top -->
+
+            <div class="sidebarDivider"></div>
+
+            <!--Sidebar Bottom-->
+            <div class="container pb-5 sidebarbottom">
+                <div class="row mx-2">
+
+                    <!-- Liked Songs -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/LikedSongs.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Liked Songs</p>
+                            <p class="mx-2 mb-0">Playlist ~ 300 Songs</p>
+                        </div>
+                    </a>
+                    <!-- End Liked Songs -->
+
+                    <!-- Classic Pop Picks -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/ClassicPopPicks.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Classic Pop Picks</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Classic Pop Picks -->
+
+                    <!-- Soft Lofi -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/SoftLofi.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Soft Lofi</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Soft Lofi -->
+
+                    <!-- Girl Power Anthem -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/GirlPowerAnthems.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Girl Power Anthem</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Girl Power Anthem -->
+
+                    <!-- Work Music -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/WorkMusic.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Work Music</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Work Music -->
+
+                    <!-- Chill Pop -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/purple.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Chill Pop</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Chill Pop -->
+
+                    <!-- Chart Hits -->
+                    <a href="#" class="playlist my-2 d-flex align-items-center">
+                        <div class="box" style="background-image: url(./PlaylistCovers/ChartHits.jpeg);"></div>
+                        <div class="playlistText">
+                            <p class="mx-2 mb-0">Chart Hits</p>
+                            <p class="mx-2 mb-0">Playlist ~ Spotify</p> 
+                        </div>
+                    </a>
+                    <!-- End Chart Hits -->
+                </div>
+
+            </div>
+
+            <div class="py-5 my-5 sidebarDivider2"></div>
+        </div>
+        <!-- End Sidebar Large Screen -->
+        
+        <!-- Footer -->
+        <div class="footer footer-sticky fixed-bottom d-flex align-items-center justify-content-center">
+            <div class="container py-1 d-block d-lg-flex align-items-center justify-content-between">
+                    
+                    <!-- Song Display -->
+                    <div class="py-2 footerPlaylist col-lg-4 align-items-center">
+                        <img id="masterSongCover" class="box" src="./Covers/All-too-well.jpg" alt="Song Cover">
+                        <div class="playlistTextFooter">
+                            <p class="m-0 ms-3" id="masterSongName">All too well (Taylor's Version)</p>
+                            <p class="m-0 ms-3 d-lg-block d-none" id="masterSongSinger">Taylor Swift</p>
+                        </div>
+                    </div>
+                    <!-- End Song Display -->
+
+                    <!-- Play Pause Next Previous Progress Bar Shuffle -->
+                    <div class="col-lg-6 my-2 my-lg-0 d-flex flex-column align-items-center">
+
+                        <!-- Icons Play Pause -->
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="iconNav mx-lg-2 mx-4"><i id="shuffle" class="fa-solid fa-shuffle"></i></div>
+                            <div class="iconNav mx-lg-2 mx-4 "><i id="previous" class="fa-solid fa-backward"></i></div>
+                            <div class="play iconNav mx-lg-2 mx-4"><i id="masterPlay" class="fa-solid fa-play"></i></div>
+                            <div class="iconNav mx-lg-2 mx-4"><i id="next" class="fa-solid fa-forward"></i></div>
+                        </div>
+                        <!-- End Icons Play Pause -->
+
+                        <!-- Progres Bar -->
+                        <input class="mt-2 my-lg-0" type="range" name="range" id="myProgressBar" value="0" min="0" max="100" >
+                        <!-- End Progress Bar -->
+
+                    </div>
+                    <!-- End Play Pause  Next Previous Progress Bar Shuffle -->
+
+                    <!-- Volume Range -->
+                    <div class="py-1 col-lg-2 d-none d-lg-flex justify-content-end  align-items-center">
+                        <div class="sound iconNav mx-1"><i class="fa-solid fa-volume-high"></i></div>
+                        <input class="mx-1" type="range" value="100" min="0" max="100" id="soundRange">
+                    </div>
+                    <!-- End Volume Range -->
+            </div>
+        </div>
+        <!-- End Footer -->
+        
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
