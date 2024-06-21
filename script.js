@@ -11,13 +11,13 @@ let masterSongCover = document.getElementById("masterSongCover")
 
 //song List
 let songs = [
-    {songName: "All too well (Taylor's Version)", singer:"Taylor Swift", filePath:"./Songs/1.mp3", coverPath:"./Covers/All-too-well.jpg"},
-    {songName: "Bye", singer:"Aditya Bhardwaj", filePath:"./Songs/2.mp3", coverPath:"./Covers/bye.jpg"},
-    {songName: "Dooriyan", singer:"Zaeden", filePath:"./Songs/3.mp3", coverPath:"./Covers/dooriyan-Zaeden-500-500.jpg"},
-    {songName: "Have We Met Before", singer:"Sarah Barrios, Eric Nam", filePath:"./Songs/4.mp3", coverPath:"./Covers/Have-we-met-before.jpg"},
-    {songName: "Double Take", singer:"dhruv", filePath:"./Songs/5.mp3", coverPath:"./Covers/double-take.jpg"},
-    {songName: "Love Song", singer:"Why Don't We", filePath:"./Songs/6.mp3", coverPath:"./Covers/Love-Song.jpg"},
-    {songName: "Socha Na Tha", singer:"Zaeden", filePath:"./Songs/7.mp3", coverPath:"./Covers/socha-na-tha.jpg"},
+    {songName: "Photograph", singer:"Ed Sheeran", filePath:"./Songs/1.mp3", coverPath:"./Covers/photograph.jpeg"},
+    {songName: "Khairiyat", singer:"Arijit Singh", filePath:"./Songs/2.mp3", coverPath:"./Covers/Khairiyat.jpg"},
+    {songName: "Perfect", singer:"Ed Sheeran", filePath:"./Songs/3.mp3", coverPath:"./Covers/perfect.jpeg"},
+    {songName: "Soulmate", singer:"Badshah", filePath:"./Songs/4.mp3", coverPath:"./Covers/Soulmate.jpg"},
+    {songName: "Snap", singer:"Rosa Linn", filePath:"./Songs/5.mp3", coverPath:"./Covers/snap.jpeg"},
+    {songName: "On my way", singer:"Alan Walker", filePath:"./Songs/6.mp3", coverPath:"./Covers/on-my-way.jpg"},
+    {songName: "Pal Pal dil ke pass", singer:"Kishore Kumar", filePath:"./Songs/7.mp3", coverPath:"./Covers/palpaldilkepass.jpeg"},
     {songName: "Dil Dhadakne Do", singer:"Piyanka Chopra, Farhan Akhtar", filePath:"./Songs/8.mp3", coverPath:"./Covers/dil-dhadakne-do.jpg"},
     {songName: "Senorita", singer:"Farhan Akhtar, Hrithik Roshan", filePath:"./Songs/9.mp3", coverPath:"./Covers/Senorita.jpg"},
 ]
