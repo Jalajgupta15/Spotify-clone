@@ -12,3 +12,6 @@ Features include:
 7. Play/Pause button
 8. Automatic seekbar updates
 9. Play a song by clicking on its title
+
+
+https://jalajgupta15.github.io/Spotify-clone/
